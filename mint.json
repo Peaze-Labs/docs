@@ -1,5 +1,6 @@
 {
     "name": "Peaze",
+    "default": "light",
     "logo": {
       "light": "/logo/peaze-full-black.svg",
       "dark": "/logo/peaze-full-white.svg"
