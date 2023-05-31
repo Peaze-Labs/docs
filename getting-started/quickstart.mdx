@@ -1,0 +1,38 @@
+---
+title: Quickstart
+slug: quickstart
+---
+
+Provide seamless transactions in just a few minutes and lines of code. 
+
+## Install 
+
+Use NPM to install the Peaze package.
+
+```
+npm install 
+```
+
+## Import 
+
+Import the following into your React app.
+
+```javascript
+import { PeazeProvider } from ‘@peaze-labs/sdk-react’;
+```
+
+## Wrap 
+
+Wrap your React app integrated with Wagmi with the `PeazeProvider`.
+
+```javascript
+const App = () => (
+  <PeazeProvider>
+       <WagmiConfig config={config}></WagmiConfig>
+  </PeazeProvider>
+);
+
+export default App;
+```
+
+## 🎉 That's it! 

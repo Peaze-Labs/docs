@@ -1,0 +1,26 @@
+---
+title: Crypto Transact (coming soon)
+slug: crypto-transact
+---
+
+Allows users to fund transactions with any token on any chain.
+
+### How does it work?
+
+When a user interacts with your application and initiates a transaction, the Peaze widget prompts them with the following steps:
+1. View transaction details such as price, fees, slippage, etc.
+2. Select token to transact with.
+3. Confirm the transaction.
+
+The Peaze SDK then interacts with the user's connected wallet to collect the necessary signatures. 
+Once these signatures are collected and the transaction is confirmed, the following steps take place:
+
+1. Funds are transferred from the user's wallet to the Peaze Smart Contract on the source chain. 
+2. If swapping is not required, skip to step 4. If swapping is required, the Peaze Smart Contract swaps funds through the optimal route. 
+3. If bridging is not required, skip to step 4. If bridging is required, the Peaze Smart Contract on the source chain bridges funds to the Peaze Smart Contract on the destination chain.
+4. Now having the necessary funds, the Peaze Smart Contract executes the intended transaction, and receives assets such as an NFT, LP tokens, etc. 
+5. The Peaze Smart Contract transfers the assets received in step 4 to the user's wallet. 
+
+### Supported networks
+
+This is currently an alpha feature. Please [reach out](mailto:contact@peaze.com) for more details.

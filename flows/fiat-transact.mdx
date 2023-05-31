@@ -1,0 +1,25 @@
+---
+title: Fiat Transact
+slug: fiat-transact
+---
+
+Allows users to fund on-chain transactions directly from their bank account. 
+
+### How does it work?
+
+When a user interacts with your application and initiates a transaction, the Peaze widget prompts them with the following steps:
+1. View transaction details such as price, fees, slippage, etc.
+2. (One time step) Connect bank account.
+3. Confirm the payment and transaction.
+
+The Peaze SDK then interacts with the user's connected wallet to collect the necessary signatures. 
+Once these signatures are collected and the transaction is confirmed, the following steps take place:
+
+1. The transaction signature that the user generated is temporarily stored client-side with the Peaze SDK. 
+2. Peaze on-ramps the necessary funds into the user's wallet. 
+3. Peaze broadcasts the transaction from step 1 upon receiving confirmation of the on-ramp's completion.
+
+### Supported networks
+
+- Ethereum
+- Polygon
